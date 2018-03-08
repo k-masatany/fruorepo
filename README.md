@@ -19,6 +19,7 @@ $ go get github.com/urfave/cli
 $ go get github.com/briandowns/spinner
 $ go get golang.org/x/oauth2
 $ go get github.com/google/go-github/github
+$ go get github.com/mitchellh/go-homedir
 $ go get github.com/k-masatany/fruorepo
 ```
 
