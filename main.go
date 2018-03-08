@@ -124,7 +124,7 @@ func run(opt *Options) {
 	path += "/restore"
 
 	if opt.Restore == true {
-		labelSet, err = restoreLbelset(path)
+		labelSet, err = restoreLabelset(path)
 		if err != nil {
 			MessageAndDie(err.Error())
 		}
@@ -183,7 +183,7 @@ func backupLabelset(path string, labels []*github.Label) error {
 }
 
 // restore labelset
-func restoreLbelset(path string) ([]map[string]string, error) {
+func restoreLabelset(path string) ([]map[string]string, error) {
 	labelSet := []map[string]string{}
 
 	file, err := os.Open(path)
