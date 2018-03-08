@@ -61,7 +61,7 @@ func main() {
 
 	app.Flags = []cli.Flag{
 		cli.BoolFlag{
-			Name:  "dry-run, d",
+			Name:  "dry-run",
 			Usage: "Run, But Not Change Repository.",
 		},
 		cli.BoolFlag{
