@@ -20,7 +20,7 @@ type Fruorepo struct {
 }
 
 func (f *Fruorepo) SetTokenFromEnv() {
-	f.Token = os.Getenv("GITHUB_AUTH_TOKEN")
+	f.Token = os.Getenv("GITHUB_TOKEN")
 }
 
 func (f *Fruorepo) SetClient() {

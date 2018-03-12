@@ -26,5 +26,5 @@ $ go get github.com/k-masatany/fruorepo
 ## Usage
 
 ```
-GITHUB_AUTH_TOKEN=xxx fruorepo
+GITHUB_TOKEN=xxx fruorepo
 ```
