@@ -24,7 +24,7 @@ func main() {
 	app := cli.NewApp()
 	app.Name = "fruorepo"
 	app.Usage = "We enjoy repository."
-	app.Version = "0.2.0"
+	app.Version = Version
 	app.UsageText = "fruorepo [options]"
 	app.Author = "k-masatany"
 	app.Email = "sonntag902@gmail.com"
