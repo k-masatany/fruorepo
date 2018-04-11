@@ -93,7 +93,7 @@
     "context",
     "context/ctxhttp"
   ]
-  revision = "ae89d30ce0c63142b652837da33d782e2b0a9b25"
+  revision = "24dd3780ca4f75fed9f321890729414a4b5d3f13"
 
 [[projects]]
   branch = "master"
@@ -102,13 +102,13 @@
     ".",
     "internal"
   ]
-  revision = "2f32c3ac0fa4fb807a0fcefb0b6f2468a0d99bd0"
+  revision = "fdc9e635145ae97e6c2cb777c48305600cf515cb"
 
 [[projects]]
   branch = "master"
   name = "golang.org/x/sys"
   packages = ["unix"]
-  revision = "c28acc882ebcbfbe8ce9f0f14b9ac26ee138dd51"
+  revision = "01acb38716e021ed1fc03a602bdb5838e1358c5e"
 
 [[projects]]
   name = "google.golang.org/appengine"

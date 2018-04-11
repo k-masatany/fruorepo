@@ -41,9 +41,20 @@ func (f *Fruorepo) SelectRepository() {
 	f.SetTokenFromEnv()
 	f.SetClient()
 	// get all pages of results
-	repositories, _, err := f.Client.Repositories.List(context.Background(), "", nil)
-	if err != nil {
-		MessageAndDie(err.Error())
+	opt := &github.RepositoryListOptions{
+		ListOptions: github.ListOptions{PerPage: 10},
+	}
+	var repositories []*github.Repository
+	for {
+		repos, resp, err := f.Client.Repositories.List(context.Background(), "", opt)
+		if err != nil {
+			MessageAndDie(err.Error())
+		}
+		repositories = append(repositories, repos...)
+		if resp.NextPage == 0 {
+			break
+		}
+		opt.Page = resp.NextPage
 	}
 
 	var items = []string{}
